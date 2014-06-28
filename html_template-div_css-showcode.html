@@ -1,0 +1,287 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML lang='zh-CN' xml:lang='zh-CN' xmlns='http://www.w3.org/1999/xhtml'>
+<HEAD><TITLE>HTML模板之DIV+CSS布局-02</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+.img_pos{
+	TEXT-ALIGN: center; LINE-HEIGHT: 180%
+}
+.div_codesty {
+	BACKGROUND-COLOR: #eeeed1; BORDER-LEFT: #0000ff 1px solid; BORDER-TOP: #0000ff 1px solid; BORDER-RIGHT: #0000ff 1px solid; BORDER-BOTTOM: #0000ff 1px solid; MARGIN-BOTTOM: 16px; LINE-HEIGHT: 150%; PADDING-LEFT: 2em
+}
+.span_cmdsty {
+	BACKGROUND-COLOR: #eeeed1; BORDER-LEFT: #0000ff 1px solid; BORDER-TOP: #0000ff 1px solid; BORDER-RIGHT: #0000ff 1px solid; BORDER-BOTTOM: #0000ff 1px solid; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; 
+}
+/* 以下为 表格所用的样式 */
+.tab_sty{
+	border-collapse: collapse; 
+	border: 1px solid black;
+	line-height: 180%;
+	margin-bottom: 16px;
+}
+.tab_sty caption{
+	line-height: 180%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+.tab_sty th{
+	border:1px solid gray;
+	padding: 1px 5px 1px 5px;
+	background-color: #d3d7d4;
+}
+.tab_sty td{
+	border:1px solid gray;
+	padding: 1px 5px 1px 5px;
+	background: #F6F6F6;
+}
+/* 以上为 表格所用的样式 */
+/* TOC inspired by http://jashkenas.github.com/coffee-script */
+#table-of-contents {
+	font-size: 10pt;
+	position: fixed;
+	right: 0em;
+	top: 0em;
+	background: #ffcc00;
+	line-height: 12pt;
+	text-align: center;
+	box-shadow: 0 0 1em #777777;
+	-webkit-box-shadow: 0 0 1em #777777;
+	-moz-box-shadow: 0 0 1em #777777;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	/* ensure doesn't flow off the screen when expanded */
+	max-height: 80%;
+	overflow: auto; }
+
+#table-of-contents h1 {
+	font-size: 16pt;
+	max-width: 18em;
+	border: 0;
+	font-weight: normal;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0.05em;
+	padding-bottom: 0.05em; }
+
+#table-of-contents #text-table-of-contents {
+	display: none;
+	text-align: left; }
+
+#table-of-contents:hover #text-table-of-contents {
+	display: block;
+	padding: 0.5em;
+	margin-top: -1.5em; }
+#table-of-contents LI {
+	LINE-HEIGHT: 180%
+}
+/* TOC inspired by http://jashkenas.github.com/coffee-script (END)*/
+/* 以下为 HTML 文档的 DIV+CSS 页面布局所用的样式 */
+#one-volume-edition {
+	BACKGROUND: #99ccff; WIDTH: 90%; PADDING-TOP: 8px; PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; MARGIN: 0px auto
+}
+#classify-of-edition {
+	FONT-WEIGHT: bold; FONT-SIZE: 36px; LINE-HEIGHT: 64px; HEIGHT: 64px; TEXT-ALIGN: center
+}
+.article {
+	BORDER-LEFT: #ffcc00 2px solid; BORDER-TOP: #ffcc00 2px solid; BORDER-RIGHT: #ffcc00 2px solid; BORDER-BOTTOM: #ffcc00 2px solid; MARGIN-BOTTOM: 8px; ZOOM: 1
+}
+.subject {
+	BACKGROUND: #ffcc00; BORDER-BOTTOM: #0000ff 1px dashed; FONT-WEIGHT: bold; FONT-SIZE: 36px; LINE-HEIGHT: 64px; HEIGHT: 64px; TEXT-ALIGN: center
+}
+.content {
+	PADDING-LEFT: 8px; PADDING-TOP: 2px; PADDING-RIGHT: 8px; PADDING-BOTTOM: 2px
+}
+.content P {
+	LINE-HEIGHT: 180%; TEXT-INDENT: 2em
+}
+.content PRE {
+white-space: pre-wrap;
+word-wrap: break-word;
+} /* <!-- pre 自动换行的设置。--> */
+.content LI {
+	LINE-HEIGHT: 180%
+}
+#editor_info {
+	BACKGROUND: #ffcc00; BORDER-LEFT: #ffcc00 2px solid; BORDER-TOP: #ffcc00 2px solid; BORDER-RIGHT: #ffcc00 2px solid; BORDER-BOTTOM: #ffcc00 2px solid; PADDING-LEFT: 8px; PADDING-TOP: 8px; PADDING-RIGHT: 8px; PADDING-BOTTOM: 8px; MARGIN-TOP: -8px;
+}
+/* 以上为 HTML 文档的 DIV+CSS 页面布局所用的样式 */
+/* 源代码WEB展示之自动设置行号之css (start) */
+pre.sourceCode {
+  background-color: #eeeed1;
+  border: 1px solid black;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+pre.sourceCode ol {
+  padding: 0;
+  margin: 0;
+  margin-left: 48px;
+}
+pre.sourceCode li
+{
+  padding: 2px 10px;
+  border-left: 2px groove silver;
+  color: #333;
+}
+pre.sourceCode li.odd {
+  background-color: #dbdbdb;
+}
+pre.sourceCode li.even {
+  background-color: #d4d4d4;
+}
+pre.sourceCode li:hover {
+  background-color: #9FB5DE;
+}
+/* 源代码WEB展示之自动设置行号之css (end) */
+</style>
+<!-- 源代码WEB展示之自动设置行号之 javascript (start)  -->
+<script type="text/javascript">
+window.onload = function () {
+    var preElements = document.getElementsByTagName("pre");
+    for (var i = 0; i < preElements.length; i++) {
+        var target = preElements.item(i);
+        if (target.className != "sourceCode") {
+            continue;
+        }
+        var content = target.firstChild.nodeValue;
+        var linesArray = content.split(String.fromCharCode(13));
+        if (linesArray.length == 1) {
+            linesArray = content.split(String.fromCharCode(10));
+        }
+
+        var olContainer = document.createElement("ol");
+        var index = 1;
+        for (var j = 0; j < linesArray.length; j++) {
+            var liContainer = document.createElement("li");
+            liContainer.className = index++ % 2 ? "odd" : "even";
+            var spanContainer = document.createElement("span");
+            var aText = document.createTextNode(linesArray[j]);
+            spanContainer.appendChild(aText);
+
+            liContainer.appendChild(spanContainer);
+            olContainer.appendChild(liContainer);
+        }
+        while (target.firstChild) {
+            target.removeChild(target.firstChild);
+        }
+
+        target.appendChild(olContainer);
+    }
+}
+</script>
+<!-- 源代码WEB展示之自动设置行号之 javascript (end)  -->
+</HEAD>
+
+<BODY style="BACKGROUND: #dee7f7">
+<!-- 以下为浮动的目录区域(DIV) -->
+<div id="table-of-contents">
+<h1>目录</h1>
+<hr>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-intr">引言</a></li>
+<li><a href="#sec-1">第1章</a></li>
+<li><a href="#sec-2">第2章</a></li>
+<li><a href="#sec-3">第3章</a>
+<ul>
+<li><a href="#sec-3_1">第3.1节</a></li>
+<li><a href="#sec-3_2">第3.2节</a></li>
+<li><a href="#sec-3_3">第3.3节</a></li>
+</ul></li>
+<li><a href="#sec-sum">结语</a></li>
+</ul></div></div>
+<!-- 以上为浮动的目录区域(DIV) -->
+<DIV id="one-volume-edition">
+<DIV id="classify-of-edition">文章类别(Classes of articles)</DIV>
+<!-- BEGIN of class article No.1 -->
+<DIV class="article">
+<DIV class="subject">文章主题</DIV>
+<DIV class="content">
+<!-- BEGIN of class content -->
+<P>原文网址(website)</P>
+<HR>
+<h1>标题1</h1>
+<p>我能吞下玻璃而不伤身体。</p>
+<p>我能吞下玻璃而不伤身体。</p>
+<p>The quick brown fox jumps over the lazy dog.</p>
+<p>The quick brown fox jumps over the lazy dog.</p>
+<p>那只敏捷的棕毛狐狸跃过了那只懒狗。</p>
+<p>那只敏捷的棕毛狐狸跃过了那只懒狗。</p>
+<h2>标题2</h2>
+<p>我能吞下玻璃而不伤身体。</p>
+<p>The quick brown fox jumps over the lazy dog.</p>
+<p>那只敏捷的棕毛狐狸跃过了那只懒狗。</p>
+<h3>标题3</h3>
+<p>我能吞下玻璃而不伤身体。</p>
+<p>那只敏捷的棕毛狐狸跃过了那只懒狗。</p>
+<!-- END of class content -->
+</DIV></DIV><!-- END of class article No.1 -->
+<!-- BEGIN of class article No.2 -->
+<DIV class="article">
+<DIV class="subject">文章主题</DIV>
+<DIV class="content">
+<!-- BEGIN of class content -->
+<P>原文网址(website)</P>
+<HR>
+<P>正文</P>
+<PRE>在设置了 CSS 之后，位于 &lt;PRE&gt;……&lt;/PRE&gt; 这对标签之间的很长的行会自动换行吗？很长的行会自动换行吗？很长的行会自动换行吗？很长的行会自动换行吗？很长的行会自动换行吗？很长的行会自动换行吗？很长的行会自动换行吗？很长的行会自动换行吗？很长的行会自动换行吗？很长的行会自动换行吗？</PRE>
+<P>正文</P>
+<div class="div_codesty"><pre>
+显示示例代码
+显示示例代码
+显示示例代码
+</pre></div>
+<div class="div_codesty"><pre>
+显示示例代码
+显示示例代码
+显示示例代码
+</pre></div>
+<div><pre class="sourceCode">
+我能吞下玻璃而不伤身体。
+我能吞下玻璃而不伤身体。
+The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.
+那只敏捷的棕毛狐狸跃过了那只懒狗。
+那只敏捷的棕毛狐狸跃过了那只懒狗。
+我能吞下玻璃而不伤身体。
+我能吞下玻璃而不伤身体。
+The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.
+那只敏捷的棕毛狐狸跃过了那只懒狗。
+那只敏捷的棕毛狐狸跃过了那只懒狗。
+我能吞下玻璃而不伤身体。
+The quick brown fox jumps over the lazy dog.
+那只敏捷的棕毛狐狸跃过了那只懒狗。</pre></div>
+<div><pre class="sourceCode">
+第1行代码
+第2行代码
+第3行代码</pre></div>
+<P>正文</P>
+<table align="center" width="80%" class="tab_sty">
+<caption>表格标题(Table Caption) 1</caption>
+<tbody>
+<tr><th>表头</th><th>Table Head</th></tr>
+<tr><td>吞下玻璃</td><td>不伤身体</td></tr>
+<tr><td>棕毛狐狸</td><td>跃过懒狗</td></tr>
+</tbody>
+</table>
+<table align="center" class="tab_sty">
+<caption>表格标题2</caption>
+<tbody>
+<tr><th>表头</th><th>Table Head</th></tr>
+<tr><td>吞下玻璃</td><td>不伤身体</td></tr>
+<tr><td>棕毛狐狸</td><td>跃过懒狗</td></tr>
+</tbody>
+</table>
+</DIV></DIV><!-- END of class article No.2-->
+<!-- BEGIN of class editor_info -->
+<DIV id="editor_info">
+<DIV align="center"><FONT color="red" size="+3">THE END</FONT></DIV>
+<HR align="center" color="red" size="2" width="100%">
+<DIV align="right"><FONT color="red" size="+1">HTML Template Based on DIV+CSS&nbsp;&nbsp;[Created by witunix&nbsp;&nbsp;2014-06-28]</FONT></DIV>
+</DIV><!-- END of class editor_info -->
+</DIV><!-- END of class one-volume-edition -->
+</BODY>
+</HTML>
